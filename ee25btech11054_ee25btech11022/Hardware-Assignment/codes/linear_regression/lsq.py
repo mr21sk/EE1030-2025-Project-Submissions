@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-A = np.loadtxt('training_data.txt')
+A = np.loadtxt('../../tables/training_data.txt')
 X = np.hstack((np.ones((A.shape[0],1)),A[:,[0]],A[:,[0]]**2))
 T = A[:,[0]]
 C = A[:,[1]]
@@ -21,13 +21,13 @@ plt.grid()
 plt.ylabel('Output Voltage (V)')
 plt.xlabel('Temperature ($^{\circ}$C)')
 plt.tight_layout()
-plt.savefig('../figs/train.png')
+plt.savefig('../../figs/train.png')
 
 #Close current figure(s)
 plt.close('all')
 
 #Plot for validation
-B = np.loadtxt('validation_data.txt')
+B = np.loadtxt('../../tables/validation_data.txt')
 Xv = np.hstack((np.ones((B.shape[0],1)),B[:,[0]],B[:,[0]]**2))
 Cv = B[:,[1]]
 Tv = B[:,[0]]
@@ -37,4 +37,4 @@ plt.ylabel('Output Voltage (V)')
 plt.xlabel('Temperature ($^{\circ}$C)')
 plt.grid()
 plt.tight_layout()
-plt.savefig('../figs/valid.png')
+plt.savefig('../../figs/valid.png')
