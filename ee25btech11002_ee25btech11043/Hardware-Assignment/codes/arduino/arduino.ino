@@ -14,10 +14,9 @@ void setup() {
 void loop() {
   double sumT = 0.0;
 
-  double a =   1.60009695e+00;
-  double b =   3.98087309e-03;
-  double c =  -4.05095182e-06;
-
+  double a =   1.60101746e+00;
+  double b =   3.87188680e-03;
+  double c =  -2.87138931e-06;
 
   for (int i = 0; i < numSamples; i++) {
     double r = analogRead(analogPin);
