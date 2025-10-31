@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-A = np.loadtxt(r'C:\Users\malha\Downloads\New code\trainingdata.txt')
+A = np.loadtxt('trainingdata.txt')
 T_train = A[:,0]
 Y_train = A[:,1]
 
@@ -25,7 +25,7 @@ plt.tight_layout()
 plt.savefig('train.png')
 plt.close()
 
-B = np.loadtxt(r'C:\Users\malha\Downloads\New code\validationdata.txt')
+B = np.loadtxt('validationdata.txt')
 T_valid = B[:, 0]
 Y_valid = B[:, 1]
 
@@ -41,3 +41,4 @@ plt.legend()
 plt.tight_layout()
 
 plt.savefig('valid.png')
+
