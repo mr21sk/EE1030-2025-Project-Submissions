@@ -28,12 +28,8 @@ X= np.block([[np.ones(volt.shape)],[volt],[volt*volt]]).T
 Y = X@N
 
 plt.plot(volt,Y)
-
-#plt.xlabel("ADC")
 plt.ylabel("T")
 plt.xlabel("V")
-
-#plt.show()
 plt.savefig("../../figs/TvsV.jpg")
 
 

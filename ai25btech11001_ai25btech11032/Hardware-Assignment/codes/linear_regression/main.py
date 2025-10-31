@@ -29,10 +29,7 @@ Y = X@N
 plt.plot(temp,Y)
 
 plt.xlabel("T")
-#plt.ylabel("ADC")
 plt.ylabel("V")
-
-#plt.show()
 plt.savefig("../../figs/VvsT.jpg")
 
 
