@@ -103,7 +103,7 @@ The system's logic is implemented in C++ using the Arduino IDE. The code is resp
 
 \section{Mathematical Modeling and Validation}
 \subsection{Model Training}
-To calibrate the sensor, a quadratic model of the form $V = aT^2 + bT + c$ was fitted to an empirical training dataset, which is provided in Table \ref{table:training_data}. The coefficients were determined using a Python script employing the `numpy.linalg.lstsq` function.
+To calibrate the sensor, a quadratic model of the form $V = aT^2 + bT + c$ was fitted to an empirical training dataset, which is provided in Table \ref{table:training_data}. The coefficients were determined using a Python script employing a custom Least Squares function.
 
 The derived coefficients are:
 \begin{itemize}

@@ -5,9 +5,9 @@
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // RS, E, D4, D5, D6, D7
 Adafruit_ADS1115 ads;
 
-const float a = 0.000019346;
-const float b = 0.001310;
-const float c = 0.161699;
+const float a = 0.000017826;
+const float b = 0.0014987;
+const float c = 0.1570;
 
 const int AVG_SAMPLES = 10;
 float moving_avg[AVG_SAMPLES] = {0.0};
