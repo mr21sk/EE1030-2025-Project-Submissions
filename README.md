@@ -1,6 +1,6 @@
 # EE1030 2025 — Project Submissions
 
-Welcome to the **submission repository** for the **Hardware and Software Project** under the **EE1030: Embedded Systems and Programming** course (2025 session).
+Welcome to the **submission repository** for the **Hardware and Software Project** under the **EE1030: Matrix Theory** course (2025 session).
 
 ---
 
@@ -26,14 +26,14 @@ Each student must submit their project following the structure and guidelines gi
 ---
 ## 🧾 Submission Guidelines
 
-1. **Folder Naming:** Use both team members’ roll numbers, joined by an underscore (e.g., `23XX001_23XX002`).  
+1. **Folder Naming:** Use both team members’ roll numbers, joined by an underscore (e.g., `ee24btech11001_ee25btech11036`).  
 2. **Contents:** Follow the folder hierarchy exactly as shown above or else lovely negative marks will be awarded
 3. **Pull Request Submission:**  
    - Only **one team member** should submit a pull request (PR).  
    - The **commit message** must include **both roll numbers** of the teammates.  
      Example:  
      ```
-     Commit message: 23XX001 23XX002 - EE1030 Hardware Project Submission
+     Commit message: ee25btech110yy ee25btech110xx - EE1030 Hardware Project Submission
      ```
    - Do **not** send multiple pull requests from the same team.  
 4. **Late Submissions:** Will be penalized as per course policy.  
