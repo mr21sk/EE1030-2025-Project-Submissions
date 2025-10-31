@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt(r"..\Documents\trainingdata.txt")
+data = np.loadtxt("trainingdata.txt")
 v = data[:, 0]
 t = data[:, 1]
 
@@ -28,7 +28,7 @@ ax.set_xlabel(f"Temperature(\u00B0C)")
 ax.set_ylabel("Voltage (V)")
 ax.set_title("Training Data Plot")
 ax.legend()
-plt.savefig("training.pdf")
+plt.savefig("../../figs/training.png")
 plt.show()
 
 

@@ -1,5 +1,5 @@
 import numpy as np 
-A=np.loadtxt(r"..\Documents\Validation.txt")
+A=np.loadtxt("Validation.txt")
 V=A[:,0]
 Tact=A[:,1]
 V1=np.zeros((len(V),3))

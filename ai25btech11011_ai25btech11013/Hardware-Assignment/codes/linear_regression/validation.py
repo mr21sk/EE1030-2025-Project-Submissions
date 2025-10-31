@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-train = np.loadtxt(r"..\Documents\trainingdata.txt")
+train = np.loadtxt("trainingdata.txt")
 v = train[:, 0]
 t = train[:, 1]
 
@@ -19,7 +19,7 @@ t_range = np.linspace(25, 100, 10000)
 t_pred = np.column_stack((np.ones(len(t_range)), t_range, t_range**2))
 v_pred = t_pred @ coef_v
 # Load validation data
-val = np.loadtxt(r"..\Documents\Validation.txt")
+val = np.loadtxt("Validation.txt")
 v_val = val[:, 0]
 t_val = val[:, 1]
 print(t_val)
@@ -35,7 +35,7 @@ ax.set_xlabel(f"Temperature(\u00B0C)")
 ax.set_ylabel("Voltage (V)")
 ax.set_title("Validation Data Plot")
 ax.legend()
-plt.savefig("validation.pdf")
+plt.savefig("../../figs/validation.png")
 plt.show()
 
 
