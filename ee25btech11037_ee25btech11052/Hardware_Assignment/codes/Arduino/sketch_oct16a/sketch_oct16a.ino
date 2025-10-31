@@ -24,9 +24,5 @@ void loop()
     Serial.print("Voltage: ");
     Serial.print(voltage, 3);
     Serial.println(" V");
-    float temp = (voltage - 1.248211) * 1000 / (4.139786);
-    Serial.println(temp, 2);
-    lcd.print(temp,2);
-
     delay(1000); // Wait 1 second between updates
 }
