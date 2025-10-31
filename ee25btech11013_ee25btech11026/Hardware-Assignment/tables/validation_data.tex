@@ -65,7 +65,7 @@
        \usepackage{hhline}
        \usepackage{ifthen}
 
-
+\begin{document}
 
 
 %%  End of the preamble for the standalone. The next section is for %%
@@ -148,6 +148,7 @@
 \ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{101pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{69pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{67pt*\gnumericScale}@{}}x\end{tabular}}
+
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
