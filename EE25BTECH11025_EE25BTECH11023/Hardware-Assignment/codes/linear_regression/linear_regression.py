@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sp
 
-x_train, y_train = np.loadtxt('../../../tables/training_data.txt', unpack=True)
+x_train, y_train = np.loadtxt('../../tables/training_data.txt', unpack=True)
 
-x_val, y_val = np.loadtxt('../../../tables/validation_data.txt', unpack=True)
+x_val, y_val = np.loadtxt('../../tables/validation_data.txt', unpack=True)
 
 A = np.vstack([np.ones_like(x_train), x_train, x_train**2, x_train**3]).T
 b = y_train.reshape(-1, 1)
@@ -27,21 +27,21 @@ yy_fit = coeffs[0] + coeffs[1]*xx + coeffs[2]*xx**2 + coeffs[3]*xx**3
 
 plt.figure(1, figsize=(8, 6)) 
 plt.scatter(x_train, y_train, color='blue', label="Training Data Points")
-plt.plot(xx, yy_fit, color='red', label="Inverse Least squares cubic fit")
+plt.plot(xx, yy_fit, color='red', label="Least squares cubic fit")
 plt.xlabel("Temperature(C)")
 plt.ylabel("Voltage(V)")
-plt.title("Inverse Least Squares Fit on Training Data")
+plt.title("Least Squares Fit on Training Data")
 plt.legend()
 plt.grid(True)
-plt.savefig("../../../figs/plot/training.png")
+plt.savefig("../../figs/Volt_Temp/training.png")
 
 plt.figure(2, figsize=(8, 6)) 
 plt.scatter(x_val, y_val, color='green', label="Validation Data Points")
-plt.plot(xx, yy_fit, color='red', label="Inverse Least square prediction")
+plt.plot(xx, yy_fit, color='red', label="Least square prediction")
 plt.xlabel("Temperature(C)")
 plt.ylabel("Voltage(V)")
 plt.title("Validation Data")
 plt.legend()
 plt.grid(True)
-plt.savefig("../../../figs/plot/validation.png")
+plt.savefig("../../figs/Volt_Temp/validation.png")
 plt.show()
