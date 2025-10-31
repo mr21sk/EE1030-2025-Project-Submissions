@@ -5,9 +5,10 @@ This project builds an accurate digital thermometer using a PT100 sensor, a high
 * Arduino Uno
 * ADS1115 16-bit ADC
 * PT100 RTD Sensor
-* 100$\Omega$ Precision Resistor
+* 100&Omega Precision Resistor
+* 4k&Omega
 * JHD 162A (16x2) Parallel LCD
-* 10k$\Omega$ Potentiometer
+* 22k&Omega Potentiometer
 * Breadboard & Jumper Wires
 
 ## Circuit
