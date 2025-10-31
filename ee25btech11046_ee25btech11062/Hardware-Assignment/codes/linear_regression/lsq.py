@@ -7,7 +7,13 @@ X = np.hstack((np.ones((A.shape[0], 1)), A[:, [0]], A[:, [0]]**2))
 T = A[:, [0]]
 Y = A[:, 1]
 
-C, B, A_coeff = np.linalg.lstsq(X, Y, rcond=None)[0]
+XTX = X.T @ X
+
+inv = np.linalg.inv(XTX)
+
+XTY = X.T @ Y
+
+C, B, A_coeff = inv @ XTY
 
 theta = np.array([[C], [B], [A_coeff]])
 

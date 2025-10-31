@@ -13,7 +13,7 @@ This project builds an accurate digital thermometer using a PT100 sensor, a high
 ## Circuit
 The circuit uses a voltage divider (100$\Omega$ resistor and PT100). The ADS1115 measures the voltage from this divider to calculate the sensor's resistance.
 
-![Circuit Schematic](circuit_schematic.png)
+![Circuit Schematic](figs/circuit_schematic.png)
 
 ## Software
 The project runs on the Arduino (`code.cpp`). You will need to install the following library:
@@ -21,12 +21,12 @@ The project runs on the Arduino (`code.cpp`). You will need to install the follo
 
 ## Calibration
 The sensor is calibrated using a quadratic equation (`V = aT^2 + bT + c`) because the PT100's response is not perfectly linear.
-* `lsq.py` is the Python script used to find the equation's coefficients.
-* `training_data.txt` contains the data used to train the model.
-* `validation_data.txt` contains separate data used to test the model's accuracy.
+* `codes/linear_regression/lsq.py` is the Python script used to find the equation's coefficients.
+* `tables/training_data.txt` contains the data used to train the model.
+* `tables/validation_data.txt` contains separate data used to test the model's accuracy.
 
 The Arduino code uses the coefficients from this script to convert the measured voltage into an accurate temperature.
 
 ### Training & Validation Plots
-![Training Data Plot](training_data.png)
-![Validation Data Plot](validation_data.png)
+![Training Data Plot](figs/training_data.png)
+![Validation Data Plot](figs/validation_data.png)
