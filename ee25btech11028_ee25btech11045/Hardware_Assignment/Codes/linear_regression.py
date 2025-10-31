@@ -22,4 +22,3 @@ print(f"c = {c[0]:.6f}")
 
 # Print the fitted equation
 print(f"\nEquation: T = {a[0]:.6f} + ({b[0]:.6f})*V + ({c[0]:.6f})*V²")
-run the code
