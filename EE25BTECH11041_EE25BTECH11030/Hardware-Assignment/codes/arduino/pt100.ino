@@ -1,7 +1,7 @@
 #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(12, 11, 5,4,3,2);
-const int sensorPin = A1;
+const int sensorPin = A0;
 
 void setup() {
   Serial.begin(9600);
