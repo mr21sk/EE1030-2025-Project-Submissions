@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sp
 
-y_train, x_train = np.loadtxt('../../../tables/training_data.txt', unpack=True)
+y_train, x_train = np.loadtxt('../../tables/training_data.txt', unpack=True)
 
-y_val, x_val = np.loadtxt('../../../tables/validation_data.txt', unpack=True)
+y_val, x_val = np.loadtxt('../../tables/validation_data.txt', unpack=True)
 
 A = np.vstack([np.ones_like(x_train), x_train, x_train**2, x_train**3]).T
 b = y_train.reshape(-1, 1)
@@ -33,7 +33,7 @@ plt.xlabel("Voltage(V)")
 plt.title("Inverse Least Squares Fit on Training Data")
 plt.legend()
 plt.grid(True)
-plt.savefig("../../../figs/plot_inverse/training.png")
+plt.savefig("../../figs/Temp_Volt/training.png")
 
 plt.figure(2, figsize=(8, 6)) 
 plt.scatter(x_val, y_val, color='green', label="Validation Data Points")
@@ -43,5 +43,5 @@ plt.xlabel("Voltage(V)")
 plt.title("Validation Data")
 plt.legend()
 plt.grid(True)
-plt.savefig("../../../figs/plot_inverse/validation.png")
+plt.savefig("../../figs/Temp_Volt/validation.png")
 plt.show()
