@@ -33,11 +33,9 @@ X= np.block([[np.ones(volt.shape)],[volt],[volt*volt]]).T
 Y = X@N
 plt.plot(volt,Y)
 
-#plt.xlabel("ADC")
 plt.ylabel("T")
 plt.xlabel("V")
 plt.title("Testing")
-#plt.show()
 plt.savefig("../../figs/Testing.jpg")
 
 
