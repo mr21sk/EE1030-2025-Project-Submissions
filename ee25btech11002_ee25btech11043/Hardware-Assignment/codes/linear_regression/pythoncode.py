@@ -11,7 +11,7 @@ X_train = np.column_stack((np.ones(A.shape[0]), T_train, T_train**2))
 
 
 theta = np.linalg.lstsq(X_train, Y_train, rcond=None)[0].reshape(-1, 1)
-print("The value of a , b , c are:")
+print("The value of n is :")
 print(theta)
 
 plt.figure()
@@ -41,4 +41,5 @@ plt.legend()
 plt.tight_layout()
 
 plt.savefig('valid.png')
+
 
