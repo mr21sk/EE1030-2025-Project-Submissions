@@ -1,4 +1,4 @@
-```// // Code for displaying temperatures.
+// // Code for displaying temperatures.
 #include <LiquidCrystal.h>
 #include <math.h>
 
@@ -41,4 +41,4 @@ void loop() {
 //   lcd.print("Voltage: ");
 //   lcd.print(voltage);
 //   lcd.print("V");
-// }```
+// }
